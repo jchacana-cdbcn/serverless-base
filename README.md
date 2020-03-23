@@ -31,9 +31,11 @@ After this, you'll be inside the container, able to run all serverless commands.
 
 ## Getting started
 
-In order to create your first lambda, you can leverage on the **Serverless Framework**, by executing `serverless create -t aws-nodejs`. This will create a sample Lambda function which you can change and configure later.
+In order to create your first lambda, you can leverage on the **Serverless Framework**, by executing `serverless create -t aws-nodejs -n my-service`. This will create a sample Lambda function called `my-service` based on **NodeJS** which you can change and configure later. You can specify other types like, as mentioned in the [https://serverless.com/framework/docs/providers/aws/cli-reference/create/](docs)
 
 In order to interact with **AWS**, first you need to configure your credentials. You can do so by executing `serverless config credentials --provider aws --key KEY --secret SECRET`, where KEY and SECRET can be obtained from AWS *My security credentials* menu.
 
 After that, you can deploy your Lambda Function by running `serverless deploy`
 Alternatively, you can deploy to a specific environment by doing `serverless deploy --stage <YOUR_ENVIRONMENT_NAME> `, for example: `serverless deploy --stage production`
+
+For further reference, please have look at [https://serverless.com/framework/docs/providers/aws/](Serverless with AWS)
