@@ -3,6 +3,6 @@ services:
   serverless-framework:
     build: .
     volumes:
-      - ./serverless:/home/serverless
+      - ./serverless:/home/svrless
     ports:
       - 8000:8000
