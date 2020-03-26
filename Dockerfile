@@ -5,5 +5,6 @@ RUN apt-get update
 RUN npm cache clean -f && \
 	npm install -g n && \
 	n stable
-RUN npm install -g serverless
+RUN npm install -g serverless && \
+	npm --force install -g yarn
 
