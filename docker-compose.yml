@@ -1,4 +1,4 @@
-version: '2'
+version: '2.2'
 services:
   serverless-framework:
     build: .
@@ -6,3 +6,6 @@ services:
       - ./serverless:/home/svrless
     ports:
       - 8000:8000
+    cpus: 0
+    cpu_count: 0
+    cpu_percent: 90
