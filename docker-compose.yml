@@ -6,3 +6,5 @@ services:
       - ./serverless:/home/svrless
     ports:
       - 8000:8000
+      - 3000:3000
+    command: tail -f /dev/null

@@ -38,15 +38,17 @@ You can either run it directly with *docker* or with *docker-compose*.
 
 -  `docker build -t codurance/serverless . ` First you need to build the image.
 
--  `docker run --rm -it --name codurance-serverless -v .:/home/svrless -p 8000:8000 codurance/serverless /bin/bash` This will start an interactive session.
+-  `docker run --rm -it --name codurance-serverless -v $(pwd):/home/svrless -p 8000:8000 -p 3000:3000 codurance/serverless /bin/bash` This will start an interactive session.
 
   
 
 ### Docker Compose example
 
-  
-
--  `docker-compose run serverless-framework /bin/bash ` This will build the image and start an interactive session.
+ 
+ 
+-  `docker-compose build ` Builds the image (or updates it if you've made changes to the image) 
+-  `docker-compose up -d ` Starts the container in dettached mode
+-  `docker exec -it serverless-image_serverless-framework_1 /bin/bash ` starts and interactive session
 
   
   
