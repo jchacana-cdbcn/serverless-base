@@ -10,5 +10,6 @@ RUN npm install -g serverless && \
 
 EXPOSE 8000
 EXPOSE 3000
+EXPOSE 3001
 
 CMD ["/bin/bash"]
