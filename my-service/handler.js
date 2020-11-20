@@ -15,7 +15,7 @@ var handler = async event => {
       }
     }, (err, data) => {
       if (err) console.log(err, 'helloooooo error');
-      else resolve({ "M": data.Item })
+      else resolve({ "statusCode": 200, "body": JSON.stringify({ "M": data.Item }) })
     })
   })
 };
