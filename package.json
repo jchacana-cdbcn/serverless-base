@@ -1,0 +1,29 @@
+{
+  "name": "serverless-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codurance/serverless-base.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codurance/serverless-base/issues"
+  },
+  "homepage": "https://github.com/codurance/serverless-base#readme",
+  "dependencies": {
+    "aws-sdk": "^2.796.0",
+    "husky": "^4.3.0",
+    "middy": "^0.36.0",
+    "serverless": "^2.11.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^6.8.0"
+  }
+}
