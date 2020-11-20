@@ -1,7 +1,7 @@
 plugins:
   - serverless-offline
 
-service: my-service
+service: my-new-service
 
 frameworkVersion: "2"
 
@@ -22,7 +22,7 @@ provider:
       # Restrict our IAM role permissions to
       # the specific table for the stage
       Resource:
-        - "arn:aws:dynamodb:us-east-1:300563897675:table/marmacdb"
+        - "arn:aws:dynamodb:us-east-1:300563897675:table/macmardb"
 
 functions:
   hello:

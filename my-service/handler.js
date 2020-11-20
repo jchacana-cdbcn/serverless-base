@@ -14,7 +14,7 @@ var handler = async event => {
         },
       }
     }, (err, data) => {
-      if (err) console.log(err, 'hello error');
+      if (err) console.log(err, 'helloooooo error');
       else resolve({ "M": data.Item })
     })
   })
